@@ -1,7 +1,7 @@
 var Sequelize = require('sequelize');
 
 
-var sequelize = new Sequelize('database', 'firstName', 'lastName', {
+var sequelize = new Sequelize('postgres', 'username', 'password', {
   host: 'localhost',
   dialect: 'postgres' ,
 
@@ -17,7 +17,7 @@ var sequelize = new Sequelize('database', 'firstName', 'lastName', {
 });
 
 // Or you can simply use a connection uri
-//var sequelize = new Sequelize('postgres://user:pass@example.com:5432/dbname');
+//var sequelize = new Sequelize('postgres://user:pass@example.com:5432/marcelo');
 
 sequelize
   .authenticate()
